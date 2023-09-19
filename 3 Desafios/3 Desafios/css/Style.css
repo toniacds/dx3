@@ -1,0 +1,120 @@
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button-66 {
+  background-color: #003cff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(0, 39, 90, 0.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover {
+  background-color: #010366;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+.buttons{
+    
+    display: flex;
+    
+    justify-content: center; 
+    align-items: center;    
+    align-content: center;
+
+    background-color: #ffffff;
+    height: 60px;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 50px;
+
+    margin-top: 50vh;
+
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:#000;
+    overflow:hidden;
+  }
+  
+  .center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:prespective(1000px) translate(-50%,-50%);
+    transform:skewY(15deg);
+    transition:0.5s;
+  }
+  
+  .center:hover{
+    transform:prespective(1000px) translate(-50%,-50%);
+    transform:skewY(0deg);
+  }
+  
+  .center h1 span{
+    position:absolute;
+    top:-250px;
+    left:0;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    font-size:6em;
+    color:#fff;
+    transform-style:preserve-3d;
+    transition:0.8s;
+  }
+  .center h1 span:nth-child(1){
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  
+  
+  
+  .center h1 span:nth-child(2){
+    color:#1900ff;
+    transform:translate(-50%,-50%) skewX(-60deg);
+    left:-38px;
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+  
+  .center h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewY(0deg);
+    left:-76px;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+  }
+  
+  .center:hover h1 span:nth-child(2), 
+  .center:hover h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewX(0deg);
+    left:0;
+    color:#fff;
+  }
