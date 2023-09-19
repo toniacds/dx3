@@ -27,6 +27,15 @@ function operador2(){
             else if(A == 0 &&  B == 0 && C == 1){
                 alert("Clara ganhou!😀😁")
             }
+            else if(A == 0 &&  B == 1 && C == 1){
+                    alert("Clara ganhou!😀😁")
+                }
+            else if(A == 1 &&  B == 0 && C == 1){
+                        alert("Beto ganhou!😀😁")
+                    }
+                else if(A == 1 &&  B == 1 && C == 0){
+                            alert("Clara ganhou!😀😁")
+                        }
             else if(A == 0 && B == 0 && C == 0){
                 alert("Deu empate😐")
             }
